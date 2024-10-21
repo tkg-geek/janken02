@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* ------------------------------
+ 全体
+------------------------------ */
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 0.925rem;
+    color: #555;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    width: 180px;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* ------------------------------
+ upper-section
+------------------------------ */
+.upper-section {
+    background-color: #e2e8f0;
+    height: 550px;
+}
+
+.userChoice {
+    height: 300px;
+}
+
+table {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.table01 img {
+    opacity: 0.6;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 30px 0 20px;
+    color: #5A87FD;
+}
+
+.btn_wrapper {
+    /* display: flex; */
+    margin: 20px 0 20px;
+}
+
+.btn_start {
+    width: 200px;
+    background-color: #5A87FD;
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.btn_start:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.btn_start:active {
+    background-color: #555;
+}
+
+.btn_reset {
+    width: 200px;
+    background-color: #fff;
+    padding: 12px 24px;
+    color: #5A87FD;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.btn_reset:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.btn_reset:active {
+    background-color: #eee;
+}
+#webcam-canvas {
+    border-radius: 50%;
+    border: solid 5px #5A87FD;
+    height: 250px;
+}
+
+/* ------------------------------
+ bottom-section
+------------------------------ */
+.bottom-section {
+    background-color: #202025;
+    color: #fff;
+    height: calc(100vh - 550px);
+}
+
+.table02 th {
+    width: 150px;
+    height: 70px;
+}
+
+.table02 td {
+    height: 170px;
+}
+
+.result p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}

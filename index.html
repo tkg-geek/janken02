@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>じゃんけん02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="shortcut icon" href="img/c.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <section class="upper-section">
+        <h1>顔面じゃんけん</h1>
+        <p>じゃんけんボタンを押してあなたの顔面を認識させてください</p>
+        <div class="userChoice">
+            <div class="btn_wrapper">
+                <button type="button" onclick="init()" class="btn_start">顔面じゃんけんをする</button>
+                <button type="button" id="resetButton" class="btn_reset">リセット</button>
+            </div>
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+        </div>
+    </section>
+    <section class="bottom-section">
+        <table class="table02">
+          <tr>
+            <th>あなたの顔面</th>
+            <th>CPU</th>
+          </tr>
+          <tr>
+            <td><img src="" id="userImg" alt="" /></td>
+            <td><img src="" id="cpuImg" alt="" /></td>
+          </tr>
+        </table>
+        <div class="result">
+          <p id="result"></p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  </body>
+</html>
